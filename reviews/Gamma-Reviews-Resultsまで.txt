@@ -2,14 +2,14 @@ Comments in article:
 
 
 •	Gamma-1. Include the sample size and a clearer statement on the clinical implications of the findings.
-コメントの対象：Abstract
+対象箇所：Abstract
 【修正方針】
 1.	サンプルサイズの明記: AbstractのMethodsセクションに記載されているサンプルサイズ（112名）は既に明確に記述されているため、この部分は変更しません。査読コメントは、この情報が欠落している場合の指摘か、あるいはより強調を求める意図かもしれませんが、現状の記述で十分対応できていると判断します。
 2.	臨床的意義の明確化: AbstractのConclusionセクションを修正し、研究結果の臨床的重要性や将来的な応用可能性について、より具体的な記述を加えます。特に、非侵襲的な予測モデルとしての価値や、個別化医療への貢献の可能性に触れます。ただし、本研究の結果では統計的有意差がなかった点も踏まえ、表現は慎重に行います。
 
 
 •	Gamma-2. Clarify why the integrated model showed only modest improvement and explore biological relevance of features in more detail
-コメントの対象：ResultのThis model achieved
+対象箇所：ResultのThis model achieved
 【修正方針】
 1.	統合モデルの改善が「わずか」であったことの明確化:
 o	統合モデルが数値上は最も高いAUCを示したものの、その改善幅が「modest（わずか）」であり、統計的な有意差には至らなかった点を客観的に記述します。元の記述にある「produced the most significant results」や「leading to improved prediction of pCR」といった表現は、改善の度合いを誇張する可能性があるため、より慎重な表現に置き換えます。
@@ -21,7 +21,7 @@ o	そして、これらの特徴量の詳細な生物学的意義や、統合モ
 
 
 •	Gamma-3. Expand on radiomic feature reproducibility and annotation variability.
-コメントの対象：Material & Methodのradiomic features were extracted from the VOI identified for each patient.
+対象箇所：Material & Methodのradiomic features were extracted from the VOI identified for each patient.
 【修正方針】
 1.	Annotation Variability（アノテーションのばらつき）への対応:
 o	3名の放射線科医がどのように協力してVOI（Volume of Interest: 関心領域）の輪郭付けを行ったかについて、「3人でディスカッションしながら最終的な合意に至った」というプロセスを具体的に記述します。
@@ -37,7 +37,7 @@ o	特徴量の頑健性を高めるために実施した標準的な画像前処
 
 
 •	Gamma-6. Better articulation of the hypothesis and clinical gap addressed; clearly state the added value of radiogenomics over individual modalities.
-コメントの対象：IntroductionのTo address these challenges, we hypothesized that integrating machine learning techniques with MRI and microarray gene expression data would improve pCR prediction after NAC.
+対象箇所：IntroductionのTo address these challenges, we hypothesized that integrating machine learning techniques with MRI and microarray gene expression data would improve pCR prediction after NAC.
 【修正方針】
 1.	臨床的ギャップの明確化 (Clinical gap addressed): 現行の記述「To address these challenges」の「challenges」が具体的にどのような臨床上の課題（ギャップ）を指すのかをより明確にします。MRI単独や遺伝子発現解析単独でのNAC効果予測の限界が、個別化医療の推進や治療効果の最大化においてどのような障壁となっているかを簡潔に示します。
 2.	仮説の明確化 (Better articulation of the hypothesis): 単に「改善する」という仮説ではなく、なぜラジオミクスとゲノミクスデータを統合することで予測精度が向上すると考えるのか、その理論的根拠を補強します。
