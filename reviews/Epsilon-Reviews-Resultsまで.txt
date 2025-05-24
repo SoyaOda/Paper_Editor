@@ -1,0 +1,65 @@
+Comments in article:
+
+
+•	Epsilon-1. Strengths: The abstract concisely outlines the study's objective, methods, results, and conclusion, providing a clear overview of the research. Weaknesses: The abstract could benefit from specifying the statistical methods used for comparison and mentioning the lack of statistical significance directly, to set accurate expectations for the reader.
+対象箇所：Abstract
+【修正方針】
+1.	サンプルサイズの明確化（Reviewer 2対応）:
+o	AbstractのMethodsセクションで、解析対象となった総患者数（112名）をより明確に示します。
+2.	比較に用いた統計手法の明記（Reviewer 1対応）:
+o	AbstractのResultsセクションで、モデル間のAUC（Area Under the Curve）比較に用いた統計手法（本文ではDeLong’s test）を簡潔に追記します。
+3.	統計的有意差の欠如の直接的言及（Reviewer 1対応）:
+o	AbstractのResultsセクションおよびConclusionセクションで、統合モデル（ラジオゲノミクスモデル）の性能が他の個別モデルと比較して数値上は改善したものの、その差が統計的に有意ではなかったことをより直接的かつ明確に記述します。
+4.	臨床的意義の明確化（Reviewer 2対応）:
+o	AbstractのConclusionセクションで、本研究の結果が統計的に有意な改善を示さなかったという限界を踏まえつつも、ラジオゲノミクスアプローチが将来的に持つ可能性や、今後の研究の方向性、そしてそれが乳がん患者の個別化治療にどのように貢献しうるかといった臨床的含意について、より具体的に記述します。
+
+
+
+
+•	Epsilon-2. Strengths: The methods section is detailed, explaining the study design, participant selection, and machine learning model construction and evaluation comprehensively. The use of repeated stratified nested cross-validation is a rigorous approach to model assessment. Weaknesses: 1. The section lacks a clear explanation of the criteria for feature selection and the rationale behind choosing the specific machine learning algorithms. 2. The study's retrospective design and waiver of informed consent should prompt a discussion on potential biases and limitations upfront.
+対象箇所：Materials & Methods
+【修正方針】
+査読コメントのWeakness 1「The section lacks a clear explanation of the criteria for feature selection and the rationale behind choosing the specific machine learning algorithms.」およびWeakness 2「The study's retrospective design and waiver of informed consent should prompt a discussion on potential biases and limitations upfront.」に対応します。
+1.	特徴選択の基準と機械学習アルゴリズム選択の理論的根拠の明確化（コメント1対応）:
+o	Machine Learning Model Construction and Evaluationセクション、および関連するTable 2の記述を修正します。
+o	ラジオミクス特徴量について、抽出された1,132個全てを初期入力として使用したのか、あるいは何らかの選択基準があったのかを明確にします。
+o	マイクロアレイデータで1000遺伝子にランダムサブセットした理由（例：次元削減、過学習リスクの低減、計算効率）を補足します。
+o	Random Forest分類器を選択した理由（例：高次元データへの対応能力、非線形関係のモデル化、特徴重要度の評価機能、類似研究での実績など）を具体的に記述します。
+2.	後ろ向きデザインとインフォームド・コンセント免除に伴う潜在的バイアスと限界に関する議論の追加（コメント2対応）:
+o	Study Participantsセクションの冒頭部分を修正します。
+o	インフォームド・コンセント免除の理由（後ろ向き研究、匿名化データ使用、倫理指針準拠）を明記します。
+o	後ろ向き研究デザインであることによる固有の限界（例：選択バイアス、情報バイアスの可能性、データの質の不均一性、未測定の交絡因子など）と、それらが研究結果の解釈や一般化可能性に与えうる影響について、早い段階で言及します。
+
+
+•	Epsilon-3. Strengths: The introduction effectively sets the stage by highlighting the importance of pCR as a predictive factor for favorable outcomes in breast cancer treatment and emphasizes the potential of integrating radiomics and genomics for personalized therapy. Weaknesses: While it mentions various studies on radiomics and genomics, the introduction could be enhanced by a more detailed discussion on previous findings regarding the integration of the two (radiogenomics) to establish a stronger rationale for the current study.
+対象箇所：Introduction
+
+ラジオミクスの簡単な定義を追加しました。
+ラジオミクス単独およびゲノミクス単独のアプローチの限界を踏まえ、両者を統合する「ラジオゲノミクス」という研究分野の意義と可能性を説明する段落を新たに追加しました。
+この新しい段落において、MRI由来のラジオミクス特徴と遺伝子発現データを統合した乳がんに関する先行研究（文献[A],, [C],として新規引用）に言及し、それらが治療反応予測や予後予測において有望な結果を示唆していることを具体的に示しました。
+これにより、本研究が既存の研究基盤の上に成り立ち、画像と遺伝子情報を統合することでpCR予測精度が向上するという仮説の妥当性がより明確になりました。
+
+
+•	Epsilon-4. Statistical Significance The lack of statistically significant differences between the models is a critical flaw that questions the added value of the integrative radiogenomics approach over radiomics or genomics alone. This needs addressing either by discussing potential reasons or by highlighting how minor improvements could still be clinically relevant.
+
+対象箇所：Statistics
+【修正方針】
+1.	モデル間比較に用いた統計手法の明確化:
+o	Statisticsセクションに、各モデルのAUC（Area Under the Curve）を比較するために使用した具体的な統計検定（本文中の他の箇所で言及されているDeLong’s test）を明記します。
+2.	統計的有意差に関する一般的な注釈の追加（限定的対応）:
+o	統計的有意差が得られなかった場合に考慮すべき一般的な統計学的側面（例：サンプルサイズと検出力の関連性）について、非常に簡潔に触れます。
+o	この点が研究結果の解釈において重要であり、詳細な考察はDiscussionセクションで行うことを示唆することで、査読コメントの要求（理由の議論や臨床的意義の強調）への橋渡しを試みます。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
